@@ -1,0 +1,361 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Khmer Food</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Your custom CSS styles here */
+        .container-img {
+            position: relative;
+            overflow: hidden;
+            height: 60vh;
+        }
+        .container-img img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.418); 
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .overlay-text a.btn {
+            margin-top: 10px;
+        }
+        .card {
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            margin-bottom: 20px;
+        }
+        .card-img-top {
+            width: 100%;
+            height: 275px;
+            border-radius: 20px;
+        }
+        .card-title {
+            position: absolute;
+            bottom: 19px;
+            border-radius: 10px;
+            left: 17px;
+            width: 83%;
+            height: 25%;
+            background-color: rgba(0, 0, 0, 0.377);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .card-title span {
+            font-size: 2em;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .half-width {
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.263);
+            width: 50%;
+        }
+        .card-img-left {
+            width: 100%;
+        }
+
+        .card-body {
+            padding-left: 10px;
+        }
+
+        .card-title1 h3 {
+            font-size: 18px;
+        }
+        h2{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .slick-prev,
+     .slick-next {
+    display: block !important;
+    }
+
+    </style>
+</head>
+<body>  
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="mycode.html"><i class="fas fa-home"></i></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                    <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="container-img">
+                    <img src="/pp/img/kk.jpg" alt="Khmer Food">
+                    <div class="overlay-text">
+                        <h3>ម្ហូបអាហារខ្មែរ (Khmer Food)</h3>
+                        <input type="text" value="Search">
+                        <a href="#" class="btn btn-warning">មើលមុខម្ហូប</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+
+
+    <div class="container ">
+        <div  id="slick" class="slick-slider">
+            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <div class="card border-0 shadow">
+                    <img class="card-img-top" src="/pp/img/sea.jpg" alt="">
+                    <div class="card-body">
+                        <div class="card-title">
+                            គ្រឿងសមុទ្រ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <div class="card border-0 shadow">
+                    <img  class="card-img-top" src="/pp/img/fish.jpg" alt="">
+                    <div id="img2" class="card-body">
+                        <div class="card-title">
+                            ត្រី
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <div class="card border-0 shadow">
+                    <img class="card-img-top" src="/pp/img/vegetable.jpg" alt="">
+                    <div  id="img3" class="card-body">
+                        <div class="card-title">
+                            បន្លែ
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <div  class=" card border-0 shadow">
+                    <img id="img4" class="card-img-top" src="/pp/img/hen.jpg" alt="">
+                    <div class="card-body">
+                        <div class="card-title">
+                            មាន់
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <div class="card border-0 shadow">
+                    <img  id="img5" class="card-img-top" src="/pp/img/beef.jpg" alt="">
+                    <div class="card-body">
+                        <div class="card-title">
+                            សាច់គោ
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                <div class="card border-0 shadow">
+                    <img id="img6"  class="card-img-top" src="/pp/img/pork.jpg" alt="">
+                    <div class="card-body">
+                        <div class="card-title">
+                            សាច់ជ្រូក
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+          
+           
+        
+            <!-- More image cards here -->
+     </div>
+        <div class="text-center mt-3">
+            <button id="prevBtn" class="btn btn-primary mr-2">Previous</button>
+            <button id="nextBtn" class="btn btn-primary">Next</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('#slick').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: false,
+        draggable: true,
+        infinite: true,
+        dots: false,
+        arrows: true,
+        speed: 100,
+        slidesToShow: 4, // Adjust the number of slides to show
+        slidesToScroll: 1,
+        responsive: [
+            { breakpoint: 576, settings: { slidesToShow: 2 }},
+            { breakpoint: 768, settings: { slidesToShow: 3 }},
+            { breakpoint: 992, settings: { slidesToShow: 4 }},
+            { breakpoint: 1200, settings: { slidesToShow: 5 }}
+        ]
+    });
+});
+
+     
+    </script>
+    
+    
+    
+
+    
+    
+
+    <div class="contaniner mt-5">
+        <div class="row">
+           
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-3">
+                <a href="">
+                    <div class="card border-0 shadow">
+                        <div class="d-flex">
+                            <div class="half-width">
+                                <img id="img4" class="card-img-left" src="/pp/img/pp.jpg" alt="">
+                            </div>
+                            <div class="half-width">
+                                <div class="card-body">
+                                    <div class="card-title1">
+                                        <h2>ខសាច់ជ្រូក</h2>
+                                        <h3>គ្រឿងផ្សំ</h3>
+                                        <p>-សាច់ជ្រូកបីជាន់</p>
+                                        <p>-ពងទា</p>
+                                        <p>-សាច់ជ្រូកបីជាន់</p>
+                                        <p>-ពងទា</p>
+                                        <p>- ស្ករ អំបិល...</p>   
+                                    </div>
+                                    <div class=" btn btn-warning text-dark  "> <i class="fa-regular fa-bookmark"></i> save for later</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-3">
+                <a href="">
+                    <div class="card border-0 shadow">
+                        <div class="d-flex">
+                            <div class="half-width">
+                                <img id="img4" class="card-img-left" src="/pp/img/pp.jpg" alt="">
+                            </div>
+                            <div class="half-width">
+                                <div class="card-body">
+                                    <div class="card-title1">
+                                        <h2>ខសាច់ជ្រូក</h2>
+                                        <h3>គ្រឿងផ្សំ</h3>
+                                        <p>-សាច់ជ្រូកបីជាន់</p>
+                                        <p>-ពងទា</p>
+                                        <p>-សាច់ជ្រូកបីជាន់</p>
+                                        <p>-ពងទា</p>
+                                        <p>- ស្ករ អំបិល...</p>   
+                                    </div>
+                                    <div class=" btn btn-warning text-dark  "> <i class="fa-regular fa-bookmark"></i> save for later</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-3">
+                <a href="">
+                    <div class="card border-0 shadow">
+                        <div class="d-flex">
+                            <div class="half-width">
+                                <img id="img5" class="card-img-left" src="/pp/img/octopus.jpg" alt="">
+                            </div>
+                            <div class="half-width">
+                                <div class="card-body">
+                                    <div class="card-title1">
+                                        <h2>ឆាមឹកម្រេចខ្ចី</h2>
+                                        <h3>គ្រឿងផ្សំ</h3>
+                                        <p>  - មឹក ៥ខាំ</p>
+                                        <p>  - ម្រេចខ្ចី ៣០ក្រាម</p>
+                                        <p>  - គល់ស្លឹកគ្រៃ ៣០ក្រាម (ហាន់ល្អិតៗ)</p>
+                                        <p>  - ម្ទេសខៀវ និងខ្ទឹមស ៤០ក្រាម..</p> 
+                                    </div>
+                                    <div class="btn btn-warning text-dark  "> <i class="fa-regular fa-bookmark"></i> save for later</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-3">
+                <a href=""><div class="card border-0 shadow">
+                    <div class="d-flex">
+                        <div class="half-width">
+                            <img id="img6" class="card-img-left" src="/pp/img/pork-water.jpg" alt="">
+                        </div>
+                        <div class="half-width">
+                            <div class="card-body">
+                                <div class="card-title1">
+                                    <h2>ឆាសាច់ជ្រូក</h2>
+                                    <h3>គ្រឿងផ្សំ</h3>
+                                    <p>-សាច់ជ្រូក ៣០០ក្រាម</p>
+                                    <p>-ម្ទេសដៃនាង ៣ផ្លែ</p>
+                                    <p>- ខ្ទឹមសចិញ្ច្រាំ ៤០ក្រាម</p>  
+                                    <p>- ម្រេចខ្ចី ២០ក្រាម</p>
+                                    <p>-បង្គាំងឆ្អឹង</p> 
+                                </div>
+                                <div class=" btn btn-warning text-dark  "> <i class="fa-regular fa-bookmark"></i> save for later</div>
+                            </div>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>
